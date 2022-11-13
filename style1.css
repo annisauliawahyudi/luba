@@ -1,0 +1,112 @@
+body {
+    background-color: #FFEBCD;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card {
+    background-color:  #92a374;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card > h3 {
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container2, .card-container  { 
+    margin-top: 100px;
+}
+
+.card:hover {
+    background-color: rgb(91, 87, 87);
+    transition: 1.2s;
+    color: white;
+    margin-top: -20px;
+}
+
+.jotak {
+    margin-left: 700px;
+    padding: 25px;
+}
+
+.jotak li a:hover 
+{
+    color: #ffffff;
+    background-color: #556B2F;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.4s;
+}
+
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+    border-radius: 40px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 60px;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .jotak {
+       margin-left: -20px;
+       font-size: 12px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 0;
+        padding: 0;
+    }
+}
